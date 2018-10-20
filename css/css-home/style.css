@@ -1,0 +1,282 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+/*
+=================================
+INICIALIZACIÓN
+=================================
+*/
+@font-face {
+  font-family: "Awesome";
+  src: url("../fuentes/Awesome/fontawesome-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sans";
+  src: url("../fuentes/Sans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sans";
+  src: url("../fuentes/Sans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sans";
+  src: url("../fuentes/Sans/OpenSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Sans";
+  src: url("../fuentes/Sans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Josefin";
+  src: url("../fuentes/Josefin/Dosis-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Great";
+  src: url("../fuentes/GreaVibes/GreatVibes-Regular.ttf?#iefix") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fuentes/Roboto.ttf") format("truetype");
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*
+=================================
+HEADER
+=================================
+*/
+header {
+  background: #00002E;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+header .barra {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  padding: 1em 0.5em 2em 0.5em;
+  font-size: 1.73em;
+  font-family: 'Roboto';
+}
+
+header .barra .derecho {
+  width: 50%;
+  text-align: right;
+  font-family: 'Awesome';
+}
+
+header .barra .izquierdo {
+  width: 50%;
+  text-align: left;
+}
+
+header .barraFixed {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  width: 100%;
+  color: black;
+  position: fixed;
+  padding: 0.6em;
+  font-size: 1.73em;
+  font-family: 'Roboto';
+}
+
+header .barraFixed .derecho {
+  width: 50%;
+  text-align: right;
+  font-family: 'Awesome';
+}
+
+header .barraFixed .izquierdo {
+  width: 50%;
+  text-align: left;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header nav li {
+  padding: 1%;
+  font-family: "Roboto";
+  list-style-type: none;
+}
+
+header nav li a {
+  font-family: 'Sans';
+  font-size: 1.6em;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+section#main {
+  padding: 0;
+  margin: 0;
+  background: #00002E;
+  color: white;
+  padding-bottom: 1em;
+}
+
+section#main .contenedor .padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2%;
+}
+
+section#main .contenedor .padre .izquierdo {
+  width: 50%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#main .contenedor .padre .izquierdo h1 {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 3em;
+}
+
+section#main .contenedor .padre .izquierdo p {
+  font-family: 'Roboto';
+  font-weight: 300;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 1.3em;
+  opacity: .7;
+}
+
+section#main .contenedor .padre .izquierdo button {
+  padding: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-size: 1.3em;
+  max-width: 200px;
+  background: #0099FF;
+  color: white;
+  border-color: transparent;
+  border-radius: 20px;
+  font-weight: 300;
+  font-family: 'Sans';
+}
+
+section#main .contenedor .padre .derecho {
+  width: 50%;
+  text-align: right;
+}
+
+section#main .r {
+  padding: 0;
+}
+
+section#main .r img {
+  width: 100%;
+  height: 100%;
+}
+
+section#about {
+  background: white;
+}
+
+section#about .contenedor .padre {
+  padding: 2em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#about .contenedor .padre .caja img {
+  max-height: 183.59px;
+  max-width: 250px;
+  width: 100%;
+}
+
+section#about .contenedor .padre .caja p {
+  font-family: "Sans";
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 987px) {
+  section#main .contenedor .padre .derecho {
+    display: none;
+  }
+  section#main .contenedor .padre .izquierdo {
+    width: 100%;
+    padding: 1%;
+    padding-bottom: 2em;
+  }
+  section#main .r {
+    height: 100%;
+  }
+  header {
+    padding: 0;
+  }
+  header nav {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
